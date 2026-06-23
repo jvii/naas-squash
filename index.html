@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nääs-Squash – Tamperelainen squashseura</title>
+  <meta name="description" content="Nääs-Squash on perinteinen tamperelainen squashseura. Kotikentät Tampereen Tenniskeskus ja GOGO Park.">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Nääs-Squash"></a>
+  <button class="nav-toggle" aria-label="Valikko" onclick="this.nextElementSibling.classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="index.html" class="active" data-i18n="nav.home">Etusivu</a></li>
+    <li><a href="team.html" data-i18n="nav.club">Seura</a></li>
+    <li><a href="schedule.html" data-i18n="nav.events">Tapahtumat</a></li>
+    <li><a href="team.html#membership" data-i18n="nav.join">Jäseneksi</a></li>
+    <li><a href="team.html#contact" data-i18n="nav.contact">Yhteystiedot</a></li>
+    <li class="lang-switcher">
+      <button class="lang-btn active" data-lang="fi">FI</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <img src="images/hero_home.jpg" alt="Nääs-Squash pelaajat" class="hero-bg">
+  <div class="hero-content">
+    <img src="images/logo.png" alt="Nääs-Squash" class="hero-logo">
+    <p class="est" data-i18n="index.hero.est">Est. 1990</p>
+    <h1 data-i18n="index.hero.title">Yhteisö jossa viihtyy</h1>
+    <p data-i18n="index.hero.text">Nääs-Squash on perinteinen tamperelainen squashseura, joka toivottaa tervetulleeksi lajin pariin niin uudet kuin vanhatkin kössinpelaajat.</p>
+    <a href="team.html" class="btn" data-i18n="index.hero.cta">Lue lisää</a>
+  </div>
+</div>
+
+
+<section class="events" id="events">
+  <div class="container">
+    <p class="section-label" data-i18n="index.events.label">Tulevat tapahtumat</p>
+    <h2 data-i18n="index.events.title">Tapahtumat</h2>
+    <p style="opacity:0.7" data-i18n="index.events.text">Järjestämme säännöllisesti lajitutustumisia, valmennusta, höntsyjä sekä kisamatkoja.</p>
+    <div class="events-grid">
+      <div class="event-card">
+        <img src="images/hontsyt_event.jpg" alt="Kössihöntsyt">
+        <div class="event-card-body">
+          <p class="event-type" data-i18n="schedule.event.type">Tapahtuma</p>
+          <h3>Kössihöntsyt / Saturday Squash</h3>
+          <div class="event-meta">
+            <span>Tenniskeskus</span>
+            <span>14:00–15:00</span>
+            <span>21.3.2026</span>
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="images/hontsyt1.jpg" alt="Kössihöntsyt">
+        <div class="event-card-body">
+          <p class="event-type" data-i18n="schedule.event.type">Tapahtuma</p>
+          <h3>Kössihöntsyt / Saturday Squash</h3>
+          <div class="event-meta">
+            <span>Tenniskeskus</span>
+            <span>14:00–15:00</span>
+            <span>28.3.2026</span>
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <img src="images/event2.jpg" alt="Kössihöntsyt">
+        <div class="event-card-body">
+          <p class="event-type" data-i18n="schedule.event.type">Tapahtuma</p>
+          <h3>Kössihöntsyt / Saturday Squash</h3>
+          <div class="event-meta">
+            <span>Tenniskeskus</span>
+            <span>14:00–15:00</span>
+            <span>25.4.2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:2.5rem">
+      <a href="schedule.html" class="btn btn-outline" data-i18n="index.events.all">Katso kaikki tapahtumat</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img src="images/logo.png" alt="Nääs-Squash" style="height:36px; margin-bottom:1rem; filter:brightness(0) invert(1)"><br>
+  <a href="mailto:info@naassquash.fi">info@naassquash.fi</a><br><br>
+  &copy; Nääs-Squash ry.
+</footer>
+
+<script src="i18n.js"></script>
+</body>
+</html>

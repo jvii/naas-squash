@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seura – Nääs-Squash</title>
+  <meta name="description" content="Nääs-Squash – tamperelainen squashseura vuodesta 1990. Jäsenyys, hall of fame ja yhteystiedot.">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="Nääs-Squash"></a>
+  <button class="nav-toggle" aria-label="Valikko" onclick="this.nextElementSibling.classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </button>
+  <ul>
+    <li><a href="index.html" data-i18n="nav.home">Etusivu</a></li>
+    <li><a href="team.html" class="active" data-i18n="nav.club">Seura</a></li>
+    <li><a href="schedule.html" data-i18n="nav.events">Tapahtumat</a></li>
+    <li><a href="#membership" data-i18n="nav.join">Jäseneksi</a></li>
+    <li><a href="#contact" data-i18n="nav.contact">Yhteystiedot</a></li>
+    <li class="lang-switcher">
+      <button class="lang-btn active" data-lang="fi">FI</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <img src="images/hero_team.jpg" alt="Nääs-Squash seura" class="hero-bg">
+  <div class="hero-content">
+    <img src="images/logo.png" alt="Nääs-Squash" class="hero-logo">
+    <p class="est" data-i18n="team.hero.est">Jo vuodesta 1990</p>
+    <h1 data-i18n="team.hero.title">Tamperelaisen squashin koti</h1>
+  </div>
+</div>
+
+<section class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <p class="section-label" data-i18n="team.about.label">Esittely</p>
+        <h2 data-i18n="team.about.title">Nääs-Squash</h2>
+        <p data-i18n="team.about.p1">Nääs-Squash on perinteinen tamperelainen squashseura, joka toivottaa tervetulleeksi lajin pariin niin uudet kuin vanhatkin kössinpelaajat. Kotikentät ovat Tampereen Tenniskeskus ja GOGO Park.</p>
+        <p data-i18n="team.about.p2">Näässistä löytää peliseuraa taitotasosta riippumatta. Nääs-Squash järjestää säännöllistä pelitoimintaa pääasiassa viikoittaisten seurailtojen muodossa. Tällöin kentät ovat seuran käytössä ja jäsenet kokoontuvat pelaamaan yhdessä rennoissa merkeissä.</p>
+        <p data-i18n="team.about.p3">Lisäksi järjestämme säännöllisesti lajitutustumisia, valmennusta, höntsyjä sekä kisamatkoja.</p>
+        <p data-i18n="team.about.p4">Nääs-Squash tarjoaa puitteet myös kilpailutoiminnan harrastamiselle eri tasoisille pelaajille. Osallistumme Suomen squashliigaan kolmella eri joukkueella ja sarjatasolla. Squashliiga on erinomainen tapa tutustua kilpasquashiin matalalla kynnyksellä ja kokeneempien joukkuetoverien opastuksella.</p>
+        <p data-i18n="team.about.p5">Seuran järjestämä kansallinen kilpailu Nääs-Cup kerää Suomen kössiharrastajat vuosittain Tampereelle. Perinteikäs kauden avaava turnaus on saanut legendaarisen maineen lajipiireissä.</p>
+        <p data-i18n="team.about.p6">Muiden mailapelien vanavedessä myös squashin harrastajamäärät ovat lisääntyneet viime vuosina. Squash antaa hikoilun ja rautaisen kunnon lisäksi onnistumisen tunteita jo ensimmäisestä pelikerrasta lähtien.</p>
+        <p><em data-i18n="team.about.p7">Jälkipelejä unohtamatta.</em></p>
+      </div>
+      <div class="about-img">
+        <img src="images/player_photo.png" alt="Nääs-Squash pelaaja">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIP + BENEFITS -->
+<section class="membership" id="membership">
+  <div class="container">
+    <p class="section-label" data-i18n="team.membership.label">Liity mukaan</p>
+    <h2 data-i18n="team.membership.title">Jäsenyys</h2>
+    <div class="courts-grid">
+      <div class="court-card">
+        <h3 data-i18n="team.membership.fees.title">Jäsenmaksut</h3>
+        <ul class="fee-list">
+          <li><span data-i18n="team.membership.fees.adult">Aikuiset</span><span class="fee">60 €</span></li>
+          <li><span data-i18n="team.membership.fees.senior">Eläkeläiset</span><span class="fee">40 €</span></li>
+          <li><span data-i18n="team.membership.fees.junior">Juniorit alle 19 v.</span><span class="fee">30 €</span></li>
+          <li><span data-i18n="team.membership.fees.support">Kannatusjäsenyys</span><span class="fee">30 €</span></li>
+          <li><span data-i18n="team.membership.fees.corporate">Yrityskannatusjäsenyys</span><span class="fee">200 €</span></li>
+        </ul>
+      </div>
+      <div class="court-card">
+        <h3 data-i18n="team.membership.join.title">Jäseneksi liittyminen</h3>
+        <p data-i18n="team.membership.join.li1">Täytä jäsenyyslomake alla olevasta linkistä.</p>
+        <p data-i18n="team.membership.join.li2">Lähetämme laskun jäsenmaksusta sähköpostitse.</p>
+        <a href="mailto:info@naassquash.fi?subject=Jäsenhakemus" class="btn" data-i18n="team.membership.join.cta">Täytä jäsenyyslomake</a>
+      </div>
+    </div>
+    <p class="section-label membership-sub-label" data-i18n="team.benefits.label">Jäsenyys</p>
+    <h3 class="membership-sub-heading" data-i18n="team.membership.benefits.title">Jäsenedut</h3>
+    <div class="benefits-grid">
+      <div class="court-card">
+        <h3 data-i18n="team.benefits.h1">Tenniskeskus</h3>
+        <p data-i18n="team.membership.benefits.b1">Tennarin seuraillat lauantaisin 9 €/pelikerta. Lainamailat ja harjoituspallot veloituksetta.</p>
+      </div>
+      <div class="court-card">
+        <h3>GOGO Park</h3>
+        <p data-i18n="team.membership.benefits.b2">GOGO Park -seuraillat torstaisin ja keskiviikkoisin 10 €/pelikerta. GOGO-jäsenet pelaavat ilman eri veloitusta.</p>
+      </div>
+      <div class="court-card">
+        <h3 data-i18n="team.benefits.h3">Tapahtumat & yhteisö</h3>
+        <p data-i18n="team.membership.benefits.b3">Seuran tapahtumat, valmennus- ja kilpailutoiminta. Aktiivinen yli viidenkymmenen pelaajan yhteisö.</p>
+      </div>
+      <div class="court-card">
+        <h3 data-i18n="team.benefits.h4">Varusteet</h3>
+        <p data-i18n="team.membership.benefits.b4">Varustehankintoja kuten palloja, grippejä ja peliasuja tehdään seuran kautta säännöllisesti.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HALL OF FAME -->
+<section class="hof">
+  <div class="container">
+    <p class="section-label" data-i18n="team.hof.label">Historia</p>
+    <h2 data-i18n="team.hof.title">Hall of Fame</h2>
+    <p class="hof-subtitle" data-i18n="team.hof.desc">Seuran mestaruuskilpailuja on pelattu vuodesta 1990.</p>
+
+    <div class="hof-columns">
+      <!-- Left column: 1990–2010 -->
+      <div>
+        <div class="hof-column-header">
+          <span class="hof-col-label" data-i18n="hof.col.name">Mestari</span>
+          <span class="hof-col-label" data-i18n="hof.col.year">Vuosi</span>
+        </div>
+        <div class="hof-row"><span class="hof-name">Jarmo Tammisto</span><span class="hof-year">1990</span></div>
+        <div class="hof-row"><span class="hof-name">Jarmo Tammisto</span><span class="hof-year">1991</span></div>
+        <div class="hof-row"><span class="hof-name">Jarmo Jussila</span><span class="hof-year">1992</span></div>
+        <div class="hof-row"><span class="hof-name">Ville Mäkisarka</span><span class="hof-year">1995</span></div>
+        <div class="hof-row"><span class="hof-name">Krister Koivula</span><span class="hof-year">1997</span></div>
+        <div class="hof-row"><span class="hof-name">Ari Kuoppa</span><span class="hof-year">2000</span></div>
+        <div class="hof-row"><span class="hof-name">Krister Koivula</span><span class="hof-year">2002</span></div>
+        <div class="hof-row"><span class="hof-name">Krister Koivula</span><span class="hof-year">2005</span></div>
+        <div class="hof-row"><span class="hof-name">Erik Mäki</span><span class="hof-year">2008</span></div>
+        <div class="hof-row"><span class="hof-name">Juha Heinonen</span><span class="hof-year">2010</span></div>
+      </div>
+      <!-- Right column: 2012–2025 -->
+      <div>
+        <div class="hof-column-header">
+          <span class="hof-col-label" data-i18n="hof.col.name">Mestari</span>
+          <span class="hof-col-label" data-i18n="hof.col.year">Vuosi</span>
+        </div>
+        <div class="hof-row"><span class="hof-name">Jani Viitala</span><span class="hof-year">2012</span></div>
+        <div class="hof-row"><span class="hof-name">Arttu Turtonen</span><span class="hof-year">2014</span></div>
+        <div class="hof-row"><span class="hof-name">Matti Eskelinen</span><span class="hof-year">2016</span></div>
+        <div class="hof-row"><span class="hof-name">Erik Mäki</span><span class="hof-year">2018</span></div>
+        <div class="hof-row"><span class="hof-name">Angel Iglesias</span><span class="hof-year">2022</span></div>
+        <div class="hof-row"><span class="hof-name">Jyri Blomqvist <small>(Racketball)</small></span><span class="hof-year">2022</span></div>
+        <div class="hof-row"><span class="hof-name">Angel Iglesias</span><span class="hof-year">2023</span></div>
+        <div class="hof-row"><span class="hof-name">Geoffrey Platt</span><span class="hof-year">2024</span></div>
+        <div class="hof-row"><span class="hof-name">Geoffrey Platt</span><span class="hof-year">2025</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURTS -->
+<section class="courts">
+  <div class="container">
+    <p class="section-label" data-i18n="team.courts.label">Kotikentät</p>
+    <h2 data-i18n="team.courts.title">Pelipaikat</h2>
+    <div class="courts-grid">
+      <div class="court-card">
+        <h3>Tampereen Tenniskeskus</h3>
+        <p>Hämeenpuisto 47, 33200 Tampere</p>
+        <p style="margin-top:0.5rem; font-size:0.9rem; color:#666" data-i18n="team.courts.tenniskeskus.note">Seuraillat lauantaisin klo 15–17</p>
+      </div>
+      <div class="court-card">
+        <h3>GOGO Park</h3>
+        <p>Toimelankatu 8, 33560 Tampere</p>
+        <p style="margin-top:0.5rem; font-size:0.9rem; color:#666" data-i18n="team.courts.gogo.note">Seuraillat keskiviikkoisin klo 11–12:30 ja torstaisin klo 17–19</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <p class="section-label" data-i18n="team.contact.label">Ota yhteyttä</p>
+    <h2 data-i18n="team.contact.title">Yhteystiedot</h2>
+    <p style="opacity:0.6; margin-bottom:0" data-i18n="team.contact.text">Otamme mielellämme uusia jäseniä ja vastaamme kyselyihin.</p>
+    <div class="contact-links">
+      <a href="mailto:info@naassquash.fi">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        <span>info@naassquash.fi</span>
+      </a>
+      <a href="https://www.instagram.com/naassquash/" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        <span>Instagram</span>
+      </a>
+      <a href="https://www.facebook.com/naassquash" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.269h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+        <span>Facebook</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img src="images/logo.png" alt="Nääs-Squash" style="height:36px; margin-bottom:1rem; filter:brightness(0) invert(1)"><br>
+  <a href="mailto:info@naassquash.fi">info@naassquash.fi</a><br><br>
+  &copy; Nääs-Squash ry.
+</footer>
+
+<script src="i18n.js"></script>
+</body>
+</html>
