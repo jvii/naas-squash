@@ -84,7 +84,7 @@ function renderEventCard(event, showButton) {
 function renderEventsGrid(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
-  const limit = container.dataset.limit ? parseInt(container.dataset.limit) : null;
+  const limit = container.dataset.limit ? parseInt(container.dataset.limit, 10) : null;
   const showButton = container.dataset.buttons !== 'false';
   const filter = container.dataset.filter;
 
