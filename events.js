@@ -37,14 +37,28 @@ const events = [
   },
   {
     typeKey: 'schedule.event.competition',
-    titleKey: 'event.naascup.title',
+    titleKey: 'event.clubchamp.title',
     venue: 'Tenniskeskus',
     time: 'TBA',
     date: '23.5.2026',
     image: 'images/naas_cup.jpg',
     link: 'event-naas-cup-2026.html',
   },
+  {
+    typeKey: 'schedule.event.competition',
+    titleKey: 'Nääs-Cup 2026',
+    venue: 'Tenniskeskus',
+    time: 'TBA',
+    date: '12.9.2026',
+    image: 'images/naas_cup.jpg',
+    link: 'event-naas-cup.html',
+  },
 ];
+
+function parseEventDate(dateStr) {
+  const [day, month, year] = dateStr.split('.').map(Number);
+  return new Date(year, month - 1, day);
+}
 
 function renderEventCard(event, showButton) {
   const lang = localStorage.getItem('lang') || 'fi';
@@ -72,6 +86,18 @@ function renderEventsGrid(containerId) {
   if (!container) return;
   const limit = container.dataset.limit ? parseInt(container.dataset.limit) : null;
   const showButton = container.dataset.buttons !== 'false';
-  const slice = limit ? events.slice(0, limit) : events;
+  const filter = container.dataset.filter;
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  let filtered = events;
+  if (filter === 'upcoming') {
+    filtered = events.filter(e => parseEventDate(e.date) >= today);
+  } else if (filter === 'past') {
+    filtered = events.filter(e => parseEventDate(e.date) < today).reverse();
+  }
+
+  const slice = limit ? filtered.slice(0, limit) : filtered;
   container.innerHTML = slice.map(e => renderEventCard(e, showButton)).join('');
 }

@@ -14,8 +14,8 @@ const translations = {
     'index.hero.cta': 'Lue lisää',
 
     // Index — events
-    'index.events.label': 'Tulevat tapahtumat',
-    'index.events.title': 'Tapahtumat',
+    'index.events.label': 'Kalenteri',
+    'index.events.title': 'Tulevat tapahtumat',
     'index.events.text': 'Järjestämme säännöllisesti lajitutustumisia, valmennusta, höntsyjä sekä kisamatkoja.',
     'index.events.all': 'Katso kaikki tapahtumat',
 
@@ -79,6 +79,7 @@ const translations = {
     'schedule.label': 'Kalenteri',
     'schedule.title': 'Tapahtumat',
     'schedule.upcoming.label': 'Tulevat tapahtumat',
+    'schedule.past.label': 'Menneet tapahtumat',
     'schedule.event.type': 'Tapahtuma',
     'schedule.event.competition': 'Kilpailu',
     'schedule.weekly.label': 'Vakiotoiminta',
@@ -90,13 +91,19 @@ const translations = {
     // Event page — shared
     'event.about': 'Tapahtumasta',
     'event.hontsyt.title': 'Kössihöntsyt',
+    'event.hontsyt.sub': 'Avoin pelitapahtuma',
     'event.hontsyt.p1': 'Kössihöntsyt on Nääs-Squashin viikoittainen avoin pelitapahtuma Tampereen Tenniskeskuksella. Tapahtuma on tarkoitettu kaikille squashista kiinnostuneille – niin aloittelijoille kuin kokeneemmillekin pelaajille.',
     'event.hontsyt.p2': 'Kentille tulee vain saapua paikalle tapahtuma-aikana. Lainamailat ja harjoituspallot ovat käytettävissä veloituksetta. Saat helposti peliseuraa muista osallistujista.',
     'event.hontsyt.p3': 'Hontsyt on erinomainen tapa tutustua lajiin tai seuraan ilman sitoumuksia. Tervetuloa!',
     'event.hontsyt.time': 'Lauantaisin klo 14–15',
     'event.hontsyt.price': '9 € / kerta. Lainamailat ja pallot veloituksetta.',
     'event.hontsyt.dates-label': 'Tulevat päivämäärät',
-    'event.naascup.title': 'Seuran mestaruuskilpailut',
+    'event.clubchamp.title': 'Seuran mestaruuskilpailut',
+    'event.clubchamp.sub': 'Seuran mestaruuskilpailut 2026',
+    'event.naascup.sub': 'Avoin kansallinen turnaus',
+    'event.naascup.p1': 'Nääs-Cup on Nääs-Squashin järjestämä avoin kansallinen squashkilpailu, joka kokoaa Suomen kössiharrastajat vuosittain Tampereelle. Turnaus on avoin kaikille pelaajille pelitasosta riippumatta.',
+    'event.naascup.p2': 'Perinteikäs kauden avaava turnaus on vuosien varrella saavuttanut legendaarisen maineen lajipiireissä. Kilpailu tarjoaa juhlavat puitteet sekä vaativille kilpapelaajille että harrastelijoille.',
+    'event.naascup.p3': 'Ilmoittautuminen avataan lähempänä tapahtumaa. Lisätiedot ja aikataulut julkaistaan seuran kanavilla.',
 
     // Event page — specific
     'event.date': 'Päivämäärä',
@@ -122,8 +129,8 @@ const translations = {
     'index.hero.cta': 'About us',
 
     // Index — events
-    'index.events.label': 'Upcoming events',
-    'index.events.title': 'Events',
+    'index.events.label': 'Calendar',
+    'index.events.title': 'Upcoming events',
     'index.events.text': 'We regularly organize sport introductions, coaching, tournaments and competition trips.',
     'index.events.all': 'See all events',
 
@@ -185,8 +192,9 @@ const translations = {
 
     // Schedule
     'schedule.label': 'Calendar',
-    'schedule.title': 'Upcoming events',
+    'schedule.title': 'Events',
     'schedule.upcoming.label': 'Upcoming events',
+    'schedule.past.label': 'Past events',
     'schedule.event.type': 'Event',
     'schedule.event.competition': 'Competition',
     'schedule.weekly.label': 'Regular play',
@@ -198,13 +206,19 @@ const translations = {
     // Event page — shared
     'event.about': 'About the event',
     'event.hontsyt.title': 'Saturday Squash',
+    'event.hontsyt.sub': 'Open play session',
     'event.hontsyt.p1': 'Saturday Squash is Nääs-Squash\'s weekly open play session at Tampere Tennis Center. The event is open to everyone interested in squash — beginners and experienced players alike.',
     'event.hontsyt.p2': 'Just show up during the session time. Loan rackets and practice balls are available free of charge. You\'ll easily find hitting partners among the other participants.',
     'event.hontsyt.p3': 'A great way to try the sport or get to know the club with no commitment. Welcome!',
     'event.hontsyt.time': 'Saturdays 14:00–15:00',
     'event.hontsyt.price': '€9 per session. Loan rackets and balls free of charge.',
     'event.hontsyt.dates-label': 'Upcoming dates',
-    'event.naascup.title': 'Club Championships',
+    'event.clubchamp.title': 'Club Championships',
+    'event.clubchamp.sub': 'Club Championships 2026',
+    'event.naascup.sub': 'Open National Tournament',
+    'event.naascup.p1': 'Nääs-Cup is an open national squash competition organized by Nääs-Squash, bringing Finland\'s squash enthusiasts to Tampere every year. The tournament is open to all players regardless of level.',
+    'event.naascup.p2': 'This traditional season-opening tournament has earned a legendary reputation in Finnish squash circles over the years, offering a great setting for both competitive players and recreational players alike.',
+    'event.naascup.p3': 'Registration opens closer to the event. Details and schedule will be published on the club\'s channels.',
 
     // Event page — specific
     'event.date': 'Date',
@@ -232,6 +246,7 @@ function applyLanguage(lang) {
 
   if (typeof renderEventsGrid === 'function') {
     renderEventsGrid('events-grid');
+    renderEventsGrid('events-grid-past');
   }
 
   document.documentElement.style.visibility = '';
