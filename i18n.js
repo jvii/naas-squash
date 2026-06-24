@@ -35,7 +35,7 @@ const translations = {
     'team.about.p7': 'Jälkipelejä unohtamatta.',
 
     // Team — membership
-    'team.membership.label': 'Liity mukaan',
+    'team.membership.label': 'Liity seuraan',
     'team.membership.title': 'Jäsenyys',
     'team.membership.fees.title': 'Jäsenmaksut',
     'team.membership.fees.adult': 'Aikuiset',
@@ -56,20 +56,20 @@ const translations = {
     // Team — HOF
     'hof.col.name': 'Mestari',
     'hof.col.year': 'Vuosi',
-    'team.hof.label': 'Historia',
+    'team.hof.label': 'Seuran mestarit',
     'team.hof.title': 'Hall of Fame',
     'team.hof.desc': 'Seuran mestaruuskilpailuja on pelattu vuodesta 1990.',
 
     // Team — courts
-    'team.courts.label': 'Kotikentät',
-    'team.courts.title': 'Pelipaikat',
+    'team.courts.label': 'Tampere',
+    'team.courts.title': 'Kotikentät',
     'team.courts.tenniskeskus.note': 'Seuraillat lauantaisin klo 15–17',
     'team.courts.gogo.note': 'Seuraillat keskiviikkoisin klo 11–12:30 ja torstaisin klo 17–19',
 
     // Team — contact
-    'team.contact.label': 'Ota yhteyttä',
+    'team.contact.label': 'Seuraa ja ota yhteyttä',
     'team.contact.title': 'Yhteystiedot',
-    'team.contact.text': 'Otamme mielellämme uusia jäseniä ja vastaamme kyselyihin.',
+    'team.contact.text': 'Otamme mielellämme uusia jäseniä ja vastaamme kyselyihin esim. sähköpostitse.',
     'team.benefits.label': 'Jäsenyys',
     'team.benefits.h1': 'Tenniskeskus',
     'team.benefits.h3': 'Tapahtumat & yhteisö',
@@ -142,7 +142,7 @@ const translations = {
     'team.about.p7': 'Not to mention the aftergames.',
 
     // Team — membership
-    'team.membership.label': 'Membership',
+    'team.membership.label': 'Join us',
     'team.membership.title': 'Membership',
     'team.membership.fees.title': 'Membership fees',
     'team.membership.fees.adult': 'Adults',
@@ -163,20 +163,20 @@ const translations = {
     // Team — HOF
     'hof.col.name': 'Champion',
     'hof.col.year': 'Year',
-    'team.hof.label': 'History',
+    'team.hof.label': 'Club champions',
     'team.hof.title': 'Hall of Fame',
     'team.hof.desc': 'The club\'s championships have been played since 1990.',
 
     // Team — courts
-    'team.courts.label': 'Home courts',
+    'team.courts.label': 'Where to play',
     'team.courts.title': 'Home courts',
     'team.courts.tenniskeskus.note': 'Club nights on Saturdays 15:00–17:00',
     'team.courts.gogo.note': 'Club nights on Wednesdays 11:00–12:30 and Thursdays 17:00–19:00',
 
     // Team — contact
-    'team.contact.label': 'Get in touch',
+    'team.contact.label': 'Follow us and get in touch',
     'team.contact.title': 'Contact us',
-    'team.contact.text': 'We welcome new members and are happy to answer any questions.',
+    'team.contact.text': 'We welcome new members and are happy to answer any questions, e.g. by email.',
     'team.benefits.label': 'Membership',
     'team.benefits.h1': 'Tennis Centre',
     'team.benefits.h3': 'Events & community',
