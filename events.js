@@ -1,5 +1,23 @@
 const events = [
   {
+    typeKey: 'schedule.event.type',
+    titleKey: 'event.hontsyt.title',
+    venue: 'Tenniskeskus',
+    time: '14:00–15:00',
+    date: '11.4.2026',
+    image: 'images/hontsyt1.jpg',
+    link: 'event-hontsyt.html',
+  },
+  {
+    typeKey: 'schedule.event.type',
+    titleKey: 'event.hontsyt.title',
+    venue: 'Tenniskeskus',
+    time: '14:00–15:00',
+    date: '25.4.2026',
+    image: 'images/event2.jpg',
+    link: 'event-hontsyt.html',
+  },
+  {
     typeKey: 'schedule.event.competition',
     titleKey: 'event.clubchamp.title',
     venue: 'Tenniskeskus',
