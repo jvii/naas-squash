@@ -258,7 +258,9 @@ function applyLanguage(lang) {
   }
 
   document.documentElement.style.visibility = '';
-  document.documentElement.classList.remove('no-transition');
+  requestAnimationFrame(function() {
+    document.documentElement.classList.remove('no-transition');
+  });
 }
 
 const saved = localStorage.getItem('lang') || 'fi';
