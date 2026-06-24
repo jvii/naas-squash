@@ -50,8 +50,7 @@ const translations = {
     'team.membership.benefits.b2': 'GOGO Park -seuraillat torstaisin ja keskiviikkoisin 10 €/pelikerta. GOGO-jäsenet pelaavat ilman eri veloitusta.',
     'team.membership.benefits.b3': 'Seuran tapahtumat, valmennus- ja kilpailutoiminta. Aktiivinen yli viidenkymmenen pelaajan yhteisö.',
     'team.membership.benefits.b4': 'Varustehankintoja kuten palloja, grippejä ja peliasuja tehdään seuran kautta säännöllisesti.',
-    'team.membership.join.li1': 'Täytä jäsenyyslomake alla olevasta linkistä',
-    'team.membership.join.li2': 'Lähetämme laskun jäsenmaksusta sähköpostitse',
+    'team.membership.join.li1': 'Täytä jäsenyyslomake alla olevasta linkistä. Lähetämme laskun jäsenmaksusta sähköpostitse.',
 
     // Team — HOF
     'hof.col.name': 'Mestari',
@@ -169,8 +168,7 @@ const translations = {
     'team.membership.benefits.b2': 'GOGO Park club nights on Thursdays and Wednesdays €10/player. GOGO members play free of charge.',
     'team.membership.benefits.b3': 'Club events, coaching and competition activities. Active community of over fifty players.',
     'team.membership.benefits.b4': 'Equipment purchases such as balls, grips and uniforms are made through the club on a regular basis.',
-    'team.membership.join.li1': 'Fill out the membership form by clicking the link below',
-    'team.membership.join.li2': 'We will send you an invoice for the membership fee',
+    'team.membership.join.li1': 'Fill out the membership form by clicking the link below. We will send you an invoice for the membership fee.',
 
     // Team — HOF
     'hof.col.name': 'Champion',
