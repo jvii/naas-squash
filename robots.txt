@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://naas-squash.netlify.app/sitemap.xml
