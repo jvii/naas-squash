@@ -42,7 +42,7 @@ const events = [
     time: 'TBA',
     date: '23.5.2026',
     image: 'images/naas_cup.jpg',
-    link: 'event-naas-cup-2026.html',
+    link: 'event-club-championships.html',
   },
   {
     typeKey: 'schedule.event.competition',
