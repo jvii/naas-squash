@@ -233,13 +233,13 @@ function applyLanguage(lang) {
   if (typeof renderEventsGrid === 'function') {
     renderEventsGrid('events-grid');
   }
+
+  document.documentElement.style.visibility = '';
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('lang') || 'fi';
-  applyLanguage(saved);
+const saved = localStorage.getItem('lang') || 'fi';
+applyLanguage(saved);
 
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
-  });
+document.querySelectorAll('.lang-btn').forEach(btn => {
+  btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
 });
