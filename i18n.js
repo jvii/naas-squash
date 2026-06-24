@@ -243,3 +243,9 @@ applyLanguage(saved);
 document.querySelectorAll('.lang-btn').forEach(btn => {
   btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
 });
+
+document.querySelectorAll('nav ul a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('nav ul').classList.remove('open');
+  });
+});
