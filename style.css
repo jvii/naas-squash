@@ -1,4 +1,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+/* Suppress all CSS transitions during initial page load to prevent lang buttons
+   from animating to their correct state when the page is revealed. Removed via
+   requestAnimationFrame after first paint — see applyLanguage() in i18n.js. */
 .no-transition, .no-transition * { transition: none !important; }
 
 :root {

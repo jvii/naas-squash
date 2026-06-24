@@ -258,6 +258,10 @@ function applyLanguage(lang) {
   }
 
   document.documentElement.style.visibility = '';
+  // Remove no-transition in the next frame, not in this task. The CSS spec uses
+  // the NEW transition property when deciding whether to animate a change, so
+  // removing the class in the same task as the button state change would still
+  // trigger the transition. rAF lets the browser paint the correct state first.
   requestAnimationFrame(function() {
     document.documentElement.classList.remove('no-transition');
   });
