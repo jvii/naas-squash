@@ -13,25 +13,10 @@ const translations = {
     'index.hero.text': 'Nääs-Squash on perinteinen tamperelainen squashseura, joka toivottaa tervetulleeksi lajin pariin niin uudet kuin vanhatkin kössinpelaajat.',
     'index.hero.cta': 'Lue lisää',
 
-    // Index — about
-    'index.about.label': 'Meistä',
-    'index.about.title': 'Tamperelaisen squashin koti',
-    'index.about.p1': 'Nääs-Squash on perinteinen tamperelainen squashseura, joka toivottaa tervetulleeksi lajin pariin niin uudet kuin vanhatkin kössinpelaajat. Kotikentät ovat Tampereen Tenniskeskus sekä GOGO Park.',
-    'index.about.p2': 'Näässistä löytää peliseuraa taitotasosta riippumatta. Järjestämme säännöllisesti lajitutustumisia, valmennusta, höntsyjä sekä kisamatkoja.',
-    'index.about.cta': 'Lue lisää',
-
-    // Index — stat
-    'index.stat.label': 'Vuotta tamperelaista squashia',
-
-    // Index — instagram
-    'index.insta.label': '#INSTAGRAM',
-    'index.insta.cta': 'Seuraa meitä @naassquash',
-
     // Index — events
     'index.events.label': 'Tulevat tapahtumat',
     'index.events.title': 'Tapahtumat',
     'index.events.text': 'Järjestämme säännöllisesti lajitutustumisia, valmennusta, höntsyjä sekä kisamatkoja.',
-    'index.events.more': 'Lue lisää',
     'index.events.all': 'Katso kaikki tapahtumat',
 
     // Team — hero
@@ -59,7 +44,6 @@ const translations = {
     'team.membership.fees.support': 'Kannatusjäsenyys',
     'team.membership.fees.corporate': 'Yrityskannatusjäsenyys',
     'team.membership.join.title': 'Jäseneksi liittyminen',
-    'team.membership.join.p': 'Täytä jäsenyyslomake alla olevasta linkistä. Lähetämme laskun jäsenmaksusta sähköpostitse.',
     'team.membership.join.cta': 'Täytä jäsenyyslomake',
     'team.membership.benefits.title': 'Jäsenedut',
     'team.membership.benefits.b1': 'Tennarin seuraillat lauantaisin 9 €/pelikerta. Lainamailat ja harjoituspallot veloituksetta.',
@@ -103,9 +87,6 @@ const translations = {
     'schedule.weekly.wed': 'Keskiviikkoisin',
     'schedule.weekly.thu': 'Torstaisin',
     'schedule.weekly.gogo-price': '10 € / GOGO-jäsenille maksuton',
-    'schedule.contact.title': 'Kysyttävää?',
-    'schedule.contact.text': 'Ota yhteyttä ja löydä peliseuraa!',
-
     // Event page — shared
     'event.about': 'Tapahtumasta',
     'event.hontsyt.title': 'Kössihöntsyt',
@@ -139,25 +120,10 @@ const translations = {
     'index.hero.text': 'Nääs-Squash is a traditional Tampere squash club that welcomes new and old squash players to the sport. Home courts are Tampere Tennis Center and GOGO Park.',
     'index.hero.cta': 'About us',
 
-    // Index — about
-    'index.about.label': 'About us',
-    'index.about.title': 'Home of Tampere squash',
-    'index.about.p1': 'Nääs-Squash is a traditional Tampere squash club that welcomes new and old squash players to the sport. Home courts are Tampere Tennis Center and GOGO Park.',
-    'index.about.p2': 'We regularly organize sport introductions, coaching, tournaments and competition trips.',
-    'index.about.cta': 'Read more',
-
-    // Index — stat
-    'index.stat.label': 'Years of Tampere squash',
-
-    // Index — instagram
-    'index.insta.label': '#INSTAGRAM',
-    'index.insta.cta': 'Follow us @naassquash',
-
     // Index — events
     'index.events.label': 'Upcoming events',
     'index.events.title': 'Events',
     'index.events.text': 'We regularly organize sport introductions, coaching, tournaments and competition trips.',
-    'index.events.more': 'More info',
     'index.events.all': 'See all events',
 
     // Team — hero
@@ -185,7 +151,6 @@ const translations = {
     'team.membership.fees.support': 'Support membership',
     'team.membership.fees.corporate': 'Business support membership',
     'team.membership.join.title': 'Become a member',
-    'team.membership.join.p': 'Fill out the membership form by clicking the link below. We will send you an invoice for the membership fee.',
     'team.membership.join.cta': 'Go to membership form',
     'team.membership.benefits.title': 'Member benefits',
     'team.membership.benefits.b1': 'Tenniskeskus club nights on Saturdays €9/player. Loan rackets and practice balls free of charge.',
@@ -229,9 +194,6 @@ const translations = {
     'schedule.weekly.wed': 'Wednesdays',
     'schedule.weekly.thu': 'Thursdays',
     'schedule.weekly.gogo-price': '10 € / Free for GOGO members',
-    'schedule.contact.title': 'Any questions?',
-    'schedule.contact.text': 'Get in touch and find your next hitting partner!',
-
     // Event page — shared
     'event.about': 'About the event',
     'event.hontsyt.title': 'Saturday Squash',
