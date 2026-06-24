@@ -620,6 +620,8 @@ footer a { color: var(--red); text-decoration: none; }
   .hof-columns,
   .courts-grid { grid-template-columns: 1fr; gap: 1.5rem; }
 
+  .hof-columns > div:last-child .hof-column-header { display: none; }
+
   .weekly-grid { grid-template-columns: 1fr; }
 
   /* EVENT PAGES */
