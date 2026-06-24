@@ -64,6 +64,11 @@ nav ul li a.active { opacity: 1; color: var(--red); }
 
 .lang-switcher { display: flex; gap: 0.25rem; align-items: center; margin-left: 0.5rem; }
 
+.nav-social { display: flex; gap: 0.75rem; align-items: center; margin-left: 0.75rem; border-left: 1px solid rgba(255,255,255,0.15); padding-left: 0.75rem; }
+.nav-social a { color: rgba(255,255,255,0.45); display: flex; transition: color 0.2s; }
+.nav-social a svg { width: 16px; height: 16px; }
+.nav-social a:hover { color: var(--white); }
+
 .lang-btn {
   background: none;
   border: 1px solid rgba(255,255,255,0.3);
@@ -541,7 +546,7 @@ footer a { color: var(--red); text-decoration: none; }
   text-transform: uppercase;
   line-height: 1.05;
   margin-bottom: 0.5rem;
-  color: var(--white);
+  color: var(--red);
 }
 
 .event-hero-sub {
@@ -551,7 +556,7 @@ footer a { color: var(--red); text-decoration: none; }
   margin-bottom: 0;
 }
 
-.event-body { background: var(--white); }
+.event-body { background: var(--light); }
 
 .event-layout {
   display: grid;
@@ -564,7 +569,7 @@ footer a { color: var(--red); text-decoration: none; }
 .event-main p { margin-bottom: 1rem; }
 
 .event-meta-card {
-  background: var(--gray-light);
+  background: var(--white);
   padding: 2rem;
   border-left: 4px solid var(--red);
   position: sticky;
@@ -608,6 +613,7 @@ footer a { color: var(--red); text-decoration: none; }
     gap: 0.25rem;
   }
   nav ul.open li a { display: block; padding: 0.6rem 0; }
+  .nav-social { display: none; }
 
   /* SECTIONS */
   section { padding: 3rem 1.25rem; }
