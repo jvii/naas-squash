@@ -43,73 +43,7 @@
 <section class="events" style="padding-top:2rem">
   <div class="container">
     <p class="section-label" data-i18n="schedule.upcoming.label">Tulevat tapahtumat</p>
-    <div class="events-grid">
-      <div class="event-card">
-        <img src="images/hontsyt_event.jpg" alt="Kössihöntsyt">
-        <div class="event-card-body">
-          <p class="event-type" data-i18n="schedule.event.type">Tapahtuma</p>
-          <h3>Kössihöntsyt / Saturday Squash</h3>
-          <div class="event-meta">
-            <span>Tenniskeskus</span>
-            <span>14:00–15:00</span>
-            <span>21.3.2026</span>
-          </div>
-          <a href="event-hontsyt.html" class="btn" style="font-size:0.75rem; padding:0.6rem 1.25rem" data-i18n="schedule.event.more">Lue lisää</a>
-        </div>
-      </div>
-      <div class="event-card">
-        <img src="images/hontsyt1.jpg" alt="Kössihöntsyt">
-        <div class="event-card-body">
-          <p class="event-type" data-i18n="schedule.event.type">Tapahtuma</p>
-          <h3>Kössihöntsyt / Saturday Squash</h3>
-          <div class="event-meta">
-            <span>Tenniskeskus</span>
-            <span>14:00–15:00</span>
-            <span>28.3.2026</span>
-          </div>
-          <a href="event-hontsyt.html" class="btn" style="font-size:0.75rem; padding:0.6rem 1.25rem" data-i18n="schedule.event.more">Lue lisää</a>
-        </div>
-      </div>
-      <div class="event-card">
-        <img src="images/hontsyt1.jpg" alt="Kössihöntsyt">
-        <div class="event-card-body">
-          <p class="event-type" data-i18n="schedule.event.type">Tapahtuma</p>
-          <h3>Kössihöntsyt / Saturday Squash</h3>
-          <div class="event-meta">
-            <span>Tenniskeskus</span>
-            <span>14:00–15:00</span>
-            <span>11.4.2026</span>
-          </div>
-          <a href="event-hontsyt.html" class="btn" style="font-size:0.75rem; padding:0.6rem 1.25rem" data-i18n="schedule.event.more">Lue lisää</a>
-        </div>
-      </div>
-      <div class="event-card">
-        <img src="images/event2.jpg" alt="Kössihöntsyt">
-        <div class="event-card-body">
-          <p class="event-type" data-i18n="schedule.event.type">Tapahtuma</p>
-          <h3>Kössihöntsyt / Saturday Squash</h3>
-          <div class="event-meta">
-            <span>Tenniskeskus</span>
-            <span>14:00–15:00</span>
-            <span>25.4.2026</span>
-          </div>
-          <a href="event-hontsyt.html" class="btn" style="font-size:0.75rem; padding:0.6rem 1.25rem" data-i18n="schedule.event.more">Lue lisää</a>
-        </div>
-      </div>
-      <div class="event-card">
-        <img src="images/naas_cup.jpg" alt="Mestaruuskilpailut">
-        <div class="event-card-body">
-          <p class="event-type" data-i18n="schedule.event.competition">Kilpailu</p>
-          <h3>Seuran mestaruuskilpailut / Club Championships</h3>
-          <div class="event-meta">
-            <span>Tenniskeskus</span>
-            <span>TBA</span>
-            <span>23.5.2026</span>
-          </div>
-          <a href="event-naas-cup-2026.html" class="btn" style="font-size:0.75rem; padding:0.6rem 1.25rem" data-i18n="schedule.event.more">Lue lisää</a>
-        </div>
-      </div>
-    </div>
+    <div class="events-grid" id="events-grid" data-buttons="true"></div>
   </div>
 </section>
 
@@ -147,6 +81,7 @@
   &copy; Nääs-Squash ry.
 </footer>
 
+<script src="events.js"></script>
 <script src="i18n.js"></script>
 </body>
 </html>

@@ -96,6 +96,7 @@ const translations = {
     'event.hontsyt.time': 'Lauantaisin klo 14–15',
     'event.hontsyt.price': '9 € / kerta. Lainamailat ja pallot veloituksetta.',
     'event.hontsyt.dates-label': 'Tulevat päivämäärät',
+    'event.naascup.title': 'Seuran mestaruuskilpailut',
 
     // Event page — specific
     'event.date': 'Päivämäärä',
@@ -203,6 +204,7 @@ const translations = {
     'event.hontsyt.time': 'Saturdays 14:00–15:00',
     'event.hontsyt.price': '€9 per session. Loan rackets and balls free of charge.',
     'event.hontsyt.dates-label': 'Upcoming dates',
+    'event.naascup.title': 'Club Championships',
 
     // Event page — specific
     'event.date': 'Date',
@@ -227,6 +229,10 @@ function applyLanguage(lang) {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
+
+  if (typeof renderEventsGrid === 'function') {
+    renderEventsGrid('events-grid');
+  }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -614,6 +614,7 @@ footer a { color: var(--red); text-decoration: none; }
   }
   nav ul.open li a { display: block; padding: 0.6rem 0; }
   .nav-social { display: none; }
+  nav ul.open .nav-social { display: flex; border-left: none; padding-left: 0; margin-left: 0; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.15); }
 
   /* SECTIONS */
   section { padding: 3rem 1.25rem; }
