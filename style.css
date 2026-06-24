@@ -617,12 +617,15 @@ footer a { color: var(--red); text-decoration: none; }
   /* GRIDS → single column */
   .about-grid,
   .benefits-grid,
-  .hof-columns,
   .courts-grid { grid-template-columns: 1fr; gap: 1.5rem; }
 
+  .hof-columns { grid-template-columns: 1fr; gap: 0; }
   .hof-columns > div:last-child .hof-column-header { display: none; }
 
   .weekly-grid { grid-template-columns: 1fr; }
+
+  /* CONTACT LINKS */
+  .contact-links { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; justify-items: center; }
 
   /* EVENT PAGES */
   .event-layout { grid-template-columns: 1fr; gap: 2rem; }
