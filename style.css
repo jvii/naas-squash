@@ -167,7 +167,7 @@ nav ul li a.active { opacity: 1; color: var(--red); }
   color: var(--white);
 }
 
-.btn-outline:hover { background: var(--red); }
+.btn-outline:hover { background: var(--red); color: var(--white); }
 
 /* SECTIONS */
 section { padding: 5rem 2rem; }
