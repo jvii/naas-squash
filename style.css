@@ -119,6 +119,7 @@ nav ul li a.active { opacity: 1; color: var(--red); }
 
 .hero-logo {
   width: 190px;
+  height: auto;
   max-width: 55%;
   filter: brightness(0) invert(1);
   display: block;
